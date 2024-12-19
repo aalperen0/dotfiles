@@ -27,6 +27,18 @@ config = {
 config.colors = {
   cursor_bg = "#e9a12f",
   cursor_border = "#e9a12f",
+  tab_bar = {
+	background = "#1e2030",
+	active_tab = {
+		bg_color = "#9f5cd6",
+		fg_color = "#e6d2d1"
+	},
+	inactive_tab = {
+		bg_color = "#1e2030",
+		fg_color = "#e6d2d1"
+	},
+	
+  }
 }
 
 
@@ -125,7 +137,7 @@ end
 
 wezterm.on("update-right-status", function(window, _)
     local SOLID_LEFT_ARROW = ""
-    local ARROW_FOREGROUND = { Foreground = { Color = "#c6a0f6" } }
+    local ARROW_FOREGROUND = { Foreground = { Color = "#9f5cd6" } }
     local prefix = ""
 
     if window:leader_is_active() then
